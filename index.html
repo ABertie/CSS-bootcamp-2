@@ -8,6 +8,10 @@
     <!-- stylesheets -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -15,7 +19,7 @@
 
     <header>
 
-        <h1>Information</h1>
+        <img src="https://via.placeholder.com/200x50" alt="Infomation">
         
         <nav>
             
@@ -27,22 +31,22 @@
             <menu>
                 <li><a href="#">Nyhedsbreve</a></li>
                 <li><a href="#">Podcast</a></li>
-                <li><a href="#">Køb abonnement</a></li>
+                <li class="redAccent"><a href="#">Køb abonnement</a></li>
             </menu>
             
         </nav>
 
-        <img src="https://placekitten.com/600/200" alt="Annonce">
+        <img src="https://via.placeholder.com/600x200" alt="Annonce">
 
     </header>
     
     <main>
         
-        <article>
+        <article class="ThisPagesArticle">
             
-            <aside><span>Abonnement </span>Læsetid: 7 min.</aside>
+            <aside class="article__aside"><span class="redAccent">Abonnement </span>Læsetid: 7 min.</aside>
 
-            <h1>Gas er et godt politisk våben. Det er bare ikke Putin, der bruger det</h1>
+            <h1 class="article__heading">Gas er et godt politisk våben. Det er bare ikke Putin, der bruger det</h1>
             <p class="articleTrumpet">Nogle EU-lande frygter, at Rusland kan bruge Nord Stream 2 son politisk våben mod Europa. Men i virkeligheden er det omvendt, mener firmaerne bag rørledningen: Det er EU, der bruger gassen som våben over for Putin. Information har været på charmetur med den russiske gas' europæisk venner</p>
             
             <section class="article__payallOverlay">
@@ -51,15 +55,15 @@
                 <p><span class="payWall__greyText">Allerede abonnement?</span> <a href="#">Log ind her</a></p>
             </section>
 
-            <header>
-                <span>Udland</span>
+            <header class="article__header">
+                <span class="redAccent">Udland</span>
                 <time datetime="2018-05-07"><span class="material-symbols-outlined">schedule</span>7. maj 2018</time>
-                <span><span class="material-symbols-outlined">forum</span>Kommentarer (<span class="commentCounter">2</span>)</span>
+                <span class="article__header--comments"><span class="material-symbols-outlined">forum</span>Kommentarer (<span class="commentCounter">2</span>)</span>
             </header>
             
-            <figure>
-                <img src="https://placekitten.com/600/360" alt="5 mænd omkring et bord">
-                <figcaption>
+            <figure class="article__figure">
+                <img src="https://via.placeholder.com/600x360" alt="5 mænd omkring et bord">
+                <figcaption class="article__caption">
                     <p>Rusland vil ikke bruge gasrørledningen, Nord Stream 2, som politisk våben. Lyder det fra folkene bag projektet. Rørledningen koster 70 mia.kr. og vil sende 55 mia. kubikmeter gas ind i Europa om året.</p>
                     <span class="figcaption__photographer">
                         <span class="material-symbols-outlined">photo_camera</span>
@@ -70,25 +74,25 @@
 
             </section>
 
-            <p>&raquo;Jeg tænker, at vi lige taler os varme sammen, før vi begynder på interviewet,&laquo; siger Jens Müller, talsperson for det russiske gasfirma Nord Stream 2 AG. Vi sidder en gruppe journalister i en bus på vej til en gasterminal i Rotterdam, inviteret af folkene bag den konmmende russiske gasrørledningen, Nord Stream 2 (NS2), der efter planen skal krydse dansk farvand.</p>
+            <p class="article__firstParagraph">&raquo;Jeg tænker, at vi lige taler os varme sammen, før vi begynder på interviewet,&laquo; siger Jens Müller, talsperson for det russiske gasfirma Nord Stream 2 AG. Vi sidder en gruppe journalister i en bus på vej til en gasterminal i Rotterdam, inviteret af folkene bag den konmmende russiske gasrørledningen, Nord Stream 2 (NS2), der efter planen skal krydse dansk farvand.</p>
 
-            <p>På bussen bagsæde udvikler den 'uformelle dialog' sig hurtigt til at 20 minutters forsvar for det 12.000 kilometer lange rørledning der sidste år blev viklet ind i det stadigt mere</p>
+            <p class="article__secondParagraph">På bussen bagsæde udvikler den 'uformelle dialog' sig hurtigt til at 20 minutters forsvar for det 12.000 kilometer lange rørledning der sidste år blev viklet ind i det stadigt mere</p>
 
-            <footer>
+            <footer class="article__creators">
 
-                <article>
+                <article class="article__creators--writter">
 
-                    <img src="https://placekitten.com/40/40" alt="Jakob Stein">
+                    <img src="https://via.placeholder.com/40x40" alt="Jakob Stein">
                     <h1>Jakob Stein</h1> 
 
                     <address>
                         <a href="mailto:#"><span class="material-symbols-outlined">mail</span>Email</a>
-                        <a href="#"><span class="material-symbols-outlined">raven</span>Twitter</a>
+                        <a href="#"><span class="material-symbols-outlined">star</span>Twitter</a>
                     </address>
 
                 </article>  
 
-                <article>
+                <article class="article__creators--photographer">
 
                     <h1>Peter Nygaard Christensen</h1>
 
@@ -100,9 +104,9 @@
 
             </footer>
 
-            <footer>
+            <footer class="article__links">
                 <a href="#" class="articleSocials articleSocials--fb"><span class="material-symbols-outlined">book</span>Del</a>
-                <a href="#" class="articleSocials articleSocials--tw"><span class="material-symbols-outlined">raven</span>Tweet</a>
+                <a href="#" class="articleSocials articleSocials--tw"><span class="material-symbols-outlined">star</span>Tweet</a>
                 <a href="mailto:#" class="articleSocials articleSocials--em"><span class="material-symbols-outlined">mail</span>Email</a>
             </footer>
             
@@ -110,7 +114,7 @@
         
         <aside>
             
-            <h1>Kommmentarer</h1>
+            <h1 class="redAccent">Kommmentarer</h1>
 
             <section>
                 <span class="payWall__greyText">Du skal være registreret bruger for at kommentere. </span><a href="#">Log ind</a><span class="payWall__greyText"> eller </span><a href="#">opret bruger &laquo;</a>
@@ -145,7 +149,7 @@
 
 
             <footer>
-                <h1>Anbefallinger</h1>
+                <h1 class="redAccent">Anbefallinger</h1>
                 <button>Anbefal kommentar</button>
             </footer>
 
@@ -155,7 +159,7 @@
 
     <section>
 
-        <h1>Fik du læst? <span class="material-symbols-outlined">explore</span></h1>
+        <h1 class="redAccent">Fik du læst? <span class="material-symbols-outlined">explore</span></h1>
 
         
 
@@ -168,28 +172,28 @@
 
                 <li>
                     <a href="#">
-                        <img src="https://placekitten.com/225/150" alt="Mand der taler til en meneskemængde">
+                        <img src="https://via.placeholder.com/225x150" alt="Mand der taler til en meneskemængde">
                         <p>Alternativ forbrødring, eller hvordan jeg læste at holde op med at bekymre mig og elske jazzhænder</p>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="https://placekitten.com/225/150" alt="En mand">
+                        <img src="https://via.placeholder.com/225x150" alt="En mand">
                         <p>&raquo;Jeg måtte ud på det dybe vand forat nå til et nyt land&laquo;</p>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="https://placekitten.com/225/150" alt="To opgivende mænd">
+                        <img src="https://via.placeholder.com/225x150" alt="To opgivende mænd">
                         <p>Iceage lever stadig op til den hype, de opnåede, inden de var gamle nok til at flytte hjemmefra</p>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <img src="https://placekitten.com/225/150" alt="En mand">
+                        <img src="https://via.placeholder.com/225x150" alt="En mand">
                         <p>Under normale forhold ville Trump skandaleramte mijøchef forlængst være blevet bortvist...</p>
                     </a>
                 </li>
@@ -202,7 +206,7 @@
             
             <section>
 
-                <header>
+                <header class="redAccent">
                     <h1>Seneste nyt</h1>
                     <span>Infomaton.dk</span>
                 </header>
@@ -245,12 +249,12 @@
                         
                         <ul>
                             <li>
-                                <span>Abonnement</span>
-                                <img src="https://placekitten.com/225/150" alt="En lille gruppe menesker rundt om et bord">
+                                <span class="redAccent">Abonnement</span>
+                                <img src="https://via.placeholder.com/225x150" alt="En lille gruppe menesker rundt om et bord">
                                 <p>Gas er et godt politisk våben. Det er bare ikke Putin,der bruger det</p>
                             </li>
                             <li>
-                                <img src="https://placekitten.com/225/150" alt="En mand og en kvinde der smiler til kameraet (fra matador)">
+                                <img src="https://via.placeholder.com/225x150" alt="En mand og en kvinde der smiler til kameraet (fra matador)">
                                 <p>Mand dig op, kvinde!</p>
                             </li>
                             <li>
@@ -258,18 +262,18 @@
                                 <p>Ankesagen mod Peter Madsen kommer kun til  at handle om, hvilken straf han skal have</p>
                             </li>
                             <li>
-                                <span>Abonnement</span>
-                                <img src="https://placekitten.com/225/150" alt=">En mark med en hest og en hvid kubel">
+                                <span class="redAccent">Abonnement</span>
+                                <img src="https://via.placeholder.com/225x150" alt=">En mark med en hest og en hvid kubel">
                                 <p>Rapport fra noske regeringskommision skaber tvivl om lovligheden af FE's masseovervågning</p>
                             </li>
                             <li>
-                                <span>Abonnement</span>
+                                <span class="redAccent">Abonnement</span>
                                 <p>Sådan hånteres offentlige arbejdskonflikter i Sverige og Norge</p>
                                 <p>Den ellers højtbeungne danske model skal revideres, hvis det står til Socialdemokratiets formand, Mette Frederiksen. Information skitseres i den aledning overenskomstmodellerne hos vores nodiske søsternationer. Men måske behøver vi slet ikke se ud over landets grænser  for at finde inspiration til justeringer</p>
                             </li>
                             <li>
-                                <span>Abonnement</span>
-                                <img src="https://placekitten.com/225/150" alt="Barn der går rundt i en faldefædig by">
+                                <span class="redAccent">Abonnement</span>
+                                <img src="https://via.placeholder.com/225x150" alt="Barn der går rundt i en faldefædig by">
                                 <p>440.000 syrere er vendt tilbage, selv om krigen forsætter. Vi har fuglt en af dem</p>
                             </li>
                         </ul>
@@ -301,7 +305,7 @@
             <ul>
                 <li><a href="#"><span class="material-symbols-outlined">mail</span>Nyhedsbreve</a></li>
                 <li><a href="#"><span class="material-symbols-outlined">book</span>Facebook</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">raven</span>Twitter</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">star</span>Twitter</a></li>
                 <li><a href="#"><span class="material-symbols-outlined">rss_feed</span>RSS</a></li>
             </ul>
 
@@ -309,7 +313,7 @@
        
         <section>
 
-            <img src="https://placekitten.com/200/300" alt="En avis">
+            <img src="https://via.placeholder.com/200x300" alt="En avis">
 
             <h1>Infomation hver morgen</h1>
 

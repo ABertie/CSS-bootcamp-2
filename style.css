@@ -1,0 +1,64 @@
+@import url("/css/article.css");
+
+:root {
+    --color-accent: #ed1c24;
+    --color-dark: #222222;
+    --color-mid: #666666;
+    --color-midLight: #cccccc;
+    --color-light: #ffffff;
+
+    --color-facebook: #306199;
+    --color-twitter: #26c4f1;
+    --color-email: #999999;
+
+    --font-primary: 'Playfair Display', serif;
+    --font-accent: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-light);
+
+    font-family: sans-serif;
+    color: var(--color-dark);
+
+    padding: 0 20%;
+
+    font-family: var(--font-primary);
+}
+
+button, a {
+    background: none;
+    border: none;
+    color: inherit;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.redAccent{
+    color: var(--color-accent);
+    font-family: var(--font-accent);
+}
+
+time, .material-symbols-outlined{
+    color: var(--color-midLight);
+}
+
+.material-symbols-outlined{
+    vertical-align: top;
+    line-height: normal;
+    font-size: 1.1em;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
