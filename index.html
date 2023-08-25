@@ -18,17 +18,17 @@
 <body>
 
     <header>
+     
+        <nav class="primaryNavigation">
 
-        <img src="https://via.placeholder.com/200x50" alt="Infomation">
-        
-        <nav>
+            <img class="primaryNavigation__infomationHeader" src="https://via.placeholder.com/500x80" alt="Infomation">
             
-            <button><span class="material-symbols-outlined">menu</span>menu</button>
-            <button><span class="material-symbols-outlined">search</span></button>
+            <button class="primaryNavigation__menuButton"><span class="material-symbols-outlined">menu</span>menu</button>
+            <button class="primaryNavigation__searchButton"><span class="material-symbols-outlined">search</span></button>
 
             <a href="#">log ind<span class="material-symbols-outlined">person</span></a>
             
-            <menu>
+            <menu class="primaryNavigation__menu">
                 <li><a href="#">Nyhedsbreve</a></li>
                 <li><a href="#">Podcast</a></li>
                 <li class="redAccent"><a href="#">Køb abonnement</a></li>
@@ -36,13 +36,13 @@
             
         </nav>
 
-        <img src="https://via.placeholder.com/600x200" alt="Annonce">
+        <img class="Annonce" src="https://via.placeholder.com/600x120" alt="Annonce">
 
     </header>
     
     <main>
         
-        <article class="ThisPagesArticle">
+        <article class="ThisPagesArticle articelGrid">
             
             <aside class="article__aside"><span class="redAccent">Abonnement </span>Læsetid: 7 min.</aside>
 
@@ -55,13 +55,13 @@
                 <p><span class="payWall__greyText">Allerede abonnement?</span> <a href="#">Log ind her</a></p>
             </section>
 
-            <header class="article__header">
+            <header class="article__header articelGrid">
                 <span class="redAccent">Udland</span>
                 <time datetime="2018-05-07"><span class="material-symbols-outlined">schedule</span>7. maj 2018</time>
                 <span class="article__header--comments"><span class="material-symbols-outlined">forum</span>Kommentarer (<span class="commentCounter">2</span>)</span>
             </header>
             
-            <figure class="article__figure">
+            <figure class="article__figure pageGrid">
                 <img src="https://via.placeholder.com/600x360" alt="5 mænd omkring et bord">
                 <figcaption class="article__caption">
                     <p>Rusland vil ikke bruge gasrørledningen, Nord Stream 2, som politisk våben. Lyder det fra folkene bag projektet. Rørledningen koster 70 mia.kr. og vil sende 55 mia. kubikmeter gas ind i Europa om året.</p>
@@ -112,56 +112,54 @@
             
         </article>
         
-        <aside>
-            
-            <h1 class="redAccent">Kommmentarer</h1>
-
-            <section>
-                <span class="payWall__greyText">Du skal være registreret bruger for at kommentere. </span><a href="#">Log ind</a><span class="payWall__greyText"> eller </span><a href="#">opret bruger &laquo;</a>
-            </section>
-
-            <article>
-
-                <span class="material-symbols-outlined">person</span>
-                <h1>Henrik Holm Hansen</h1>
-                <time datetime="2018-05-07-05:56">07. maj, 2016 - 05:56</time>
-
-                <p>Hvis det forholder sig som skrevet står at Rusland for mest ud nord stream 2 forstår jeg slet ikke politikerne og måske specielt EU ikke bruger mugligheden aktivt til presse endsige fortælle PUTIN at ruslands opførsel i Ukraine ikke kan accepteres kommer der ikke penge i kassen kan oligarkerne ikke fodres!</p>
-
-                <button>Anbefal kommentar</button>
-
-            </article>
-
-            <article>
-
-                <span class="material-symbols-outlined">person</span>
-                <h1>Gert Romme</h1>
-                <time datetime="2018-05-07-17:08">07. maj, 2018 - 17:08</time>
-
-                <p>Jeg skal ikke vurdere, hvem der eventuelt kan finde på at benytte dette våben, der er lammende for civilsamfundet.</p>
-                <p>Men Rusland her faktisk brugt dette "våben" mere end en gang. Og de vestlige lande med Forbundsrepublikken i spidsen er blevet ramt mindst 2 gange.</p>
-                <p>Og hver gang har Rusland beklaget, og undskyldt sig med, at man ikke kunne ramme Poland (1 gang) og Ukraine (mindst 1 gang), uden at det påvirkede andre aftagelande. Og mindst en gang mente Rusland, at de vestlige aftagerlande burde straff??? - Ukraine.</p>
-                <p>I øvrigt så jeg i eftermiddags tidligere SPD-medlem, tidligere Forbundskanzler og tidligere Gerhard Schröder sidde på de finr pladser under Vladimir Putin indsættelses-show. Det var på RG (Russia Today), der er Vladimir Putin personlige propaganda-kanal der også sikrer "det frie ord" i verden. Det så ud til, det var meget vigtigt for Putin og RG, for der var hele tiden fokus på tidligere Hr.Schröder.</p>
-
-                <button>Anbefal kommentar</button>
-
-            </article>
-
-
-            <footer>
-                <h1 class="redAccent">Anbefallinger</h1>
-                <button>Anbefal kommentar</button>
-            </footer>
-
-        </aside>
-        
     </main>
 
-    <section>
+    <section class="comments pageGrid">
+        
+        <h1 class="redAccent">Kommmentarer</h1>
+
+        <section class="comments__registration">
+            <span class="payWall__greyText">Du skal være registreret bruger for at kommentere. </span><a href="#">Log ind</a><span class="payWall__greyText"> eller </span><a href="#">opret bruger &laquo;</a>
+        </section>
+
+        <article>
+
+            <span class="material-symbols-outlined">person</span>
+            <h1>Henrik Holm Hansen</h1>
+            <time datetime="2018-05-07-05:56">07. maj, 2016 - 05:56</time>
+
+            <p>Hvis det forholder sig som skrevet står at Rusland for mest ud nord stream 2 forstår jeg slet ikke politikerne og måske specielt EU ikke bruger mugligheden aktivt til presse endsige fortælle PUTIN at ruslands opførsel i Ukraine ikke kan accepteres kommer der ikke penge i kassen kan oligarkerne ikke fodres!</p>
+
+            <button>Anbefal kommentar</button>
+
+        </article>
+
+        <article>
+
+            <span class="material-symbols-outlined">person</span>
+            <h1>Gert Romme</h1>
+            <time datetime="2018-05-07-17:08">07. maj, 2018 - 17:08</time>
+
+            <p>Jeg skal ikke vurdere, hvem der eventuelt kan finde på at benytte dette våben, der er lammende for civilsamfundet.</p>
+            <p>Men Rusland her faktisk brugt dette "våben" mere end en gang. Og de vestlige lande med Forbundsrepublikken i spidsen er blevet ramt mindst 2 gange.</p>
+            <p>Og hver gang har Rusland beklaget, og undskyldt sig med, at man ikke kunne ramme Poland (1 gang) og Ukraine (mindst 1 gang), uden at det påvirkede andre aftagelande. Og mindst en gang mente Rusland, at de vestlige aftagerlande burde straff??? - Ukraine.</p>
+            <p>I øvrigt så jeg i eftermiddags tidligere SPD-medlem, tidligere Forbundskanzler og tidligere Gerhard Schröder sidde på de finr pladser under Vladimir Putin indsættelses-show. Det var på RG (Russia Today), der er Vladimir Putin personlige propaganda-kanal der også sikrer "det frie ord" i verden. Det så ud til, det var meget vigtigt for Putin og RG, for der var hele tiden fokus på tidligere Hr.Schröder.</p>
+
+            <button>Anbefal kommentar</button>
+
+        </article>
+
+
+        <footer class="comments__recommendations">
+            <h1 class="redAccent">Anbefallinger</h1>
+            <button>Anbefal kommentar</button>
+        </footer>
+
+    </section>
+
+    <section class="DidYouRead">
 
         <h1 class="redAccent">Fik du læst? <span class="material-symbols-outlined">explore</span></h1>
-
-        
 
         <nav class="slider">
 
@@ -190,105 +188,102 @@
                         <p>Iceage lever stadig op til den hype, de opnåede, inden de var gamle nok til at flytte hjemmefra</p>
                     </a>
                 </li>
-
+                
                 <li>
                     <a href="#">
                         <img src="https://via.placeholder.com/225x150" alt="En mand">
                         <p>Under normale forhold ville Trump skandaleramte mijøchef forlængst være blevet bortvist...</p>
                     </a>
                 </li>
-
+                
             </ul>
+            
+        </nav>
+    </section>
+        
+    <section class="fontPageNow">
+
+        <header class="fontPageNow__header pageGrid redAccent">
+            <h1>Seneste nyt</h1>
+            <span>Infomaton.dk</span>
+        </header>
+        
+        <nav class="pageGrid">
+            
+            <ul>
+                <li>
+                    <time datetime="16:36">16:36</time>
+                    <p>Slut med møntbetaling i københavnske p-automater</p>
+                </li>
+                <li>
+                    <time datetime="16:26">16:26</time>
+                    <p>Energiminister: Afgift på biomasse er forkert vej at gå</p>
+                </li>
+                <li>
+                    <time datetime="15:45">15:45</time>
+                    <p>Libanesisk premierministers parti går en tredjedel tilbage</p>
+                </li>
+                <li>
+                    <time datetime="15:10">15:10</time>
+                    <p>Ombudsmand: Offentligheden må se kronprinsen IOC-breve</p>
+                </li>
+                <li>
+                    <time datetime="15:02">15:02</time>
+                    <p>WWF: Vildsvinehegn skader andre dyrearter i grænselandet</p>
+                </li>
+                <li>
+                    <time datetime="14:46">14:46</time>
+                    <p>Atomaftale med Iran forsætter også uden USA</p>
+                </li>
+                <li>
+                    <button>Flere nyheder<span class="material-symbols-outlined">chevron_right</span></button>
+                </li>
+            </ul>
+            
+            <article>
+
+                <h2><span class="material-symbols-outlined">home</span> Forsiden lige nu</h2>
+                
+                <ul>
+                    <li>
+                        <span class="redAccent">Abonnement</span>
+                        <img src="https://via.placeholder.com/225x150" alt="En lille gruppe menesker rundt om et bord">
+                        <p>Gas er et godt politisk våben. Det er bare ikke Putin,der bruger det</p>
+                    </li>
+                    <li>
+                        <img src="https://via.placeholder.com/225x150" alt="En mand og en kvinde der smiler til kameraet (fra matador)">
+                        <p>Mand dig op, kvinde!</p>
+                    </li>
+                    <li>
+                        <p>Peter Madsen anker kun længden af sin straf</p>
+                        <p>Ankesagen mod Peter Madsen kommer kun til  at handle om, hvilken straf han skal have</p>
+                    </li>
+                    <li>
+                        <span class="redAccent">Abonnement</span>
+                        <img src="https://via.placeholder.com/225x150" alt=">En mark med en hest og en hvid kubel">
+                        <p>Rapport fra noske regeringskommision skaber tvivl om lovligheden af FE's masseovervågning</p>
+                    </li>
+                    <li>
+                        <span class="redAccent">Abonnement</span>
+                        <p>Sådan hånteres offentlige arbejdskonflikter i Sverige og Norge</p>
+                        <p>Den ellers højtbeungne danske model skal revideres, hvis det står til Socialdemokratiets formand, Mette Frederiksen. Information skitseres i den aledning overenskomstmodellerne hos vores nodiske søsternationer. Men måske behøver vi slet ikke se ud over landets grænser  for at finde inspiration til justeringer</p>
+                    </li>
+                    <li>
+                        <span class="redAccent">Abonnement</span>
+                        <img src="https://via.placeholder.com/225x150" alt="Barn der går rundt i en faldefædig by">
+                        <p>440.000 syrere er vendt tilbage, selv om krigen forsætter. Vi har fuglt en af dem</p>
+                    </li>
+                </ul>
+
+            </article>
 
         </nav>
-        
-        <section>
-            
-            <section>
 
-                <header class="redAccent">
-                    <h1>Seneste nyt</h1>
-                    <span>Infomaton.dk</span>
-                </header>
-                
-                <nav>
-                    
-                    <ul>
-                        <li>
-                            <time datetime="16:36">16:36</time>
-                            <p>Slut med møntbetaling i københavnske p-automater</p>
-                        </li>
-                        <li>
-                            <time datetime="16:26">16:26</time>
-                            <p>Energiminister: Afgift på biomasse er forkert vej at gå</p>
-                        </li>
-                        <li>
-                            <time datetime="15:45">15:45</time>
-                            <p>Libanesisk premierministers parti går en tredjedel tilbage</p>
-                        </li>
-                        <li>
-                            <time datetime="15:10">15:10</time>
-                            <p>Ombudsmand: Offentligheden må se kronprinsen IOC-breve</p>
-                        </li>
-                        <li>
-                            <time datetime="15:02">15:02</time>
-                            <p>WWF: Vildsvinehegn skader andre dyrearter i grænselandet</p>
-                        </li>
-                        <li>
-                            <time datetime="14:46">14:46</time>
-                            <p>Atomaftale med Iran forsætter også uden USA</p>
-                        </li>
-                        <li>
-                            <button>Flere nyheder<span class="material-symbols-outlined">chevron_right</span></button>
-                        </li>
-                    </ul>
-                    
-                    <article>
-
-                        <h2><span class="material-symbols-outlined">home</span> Forsiden lige nu</h2>
-                        
-                        <ul>
-                            <li>
-                                <span class="redAccent">Abonnement</span>
-                                <img src="https://via.placeholder.com/225x150" alt="En lille gruppe menesker rundt om et bord">
-                                <p>Gas er et godt politisk våben. Det er bare ikke Putin,der bruger det</p>
-                            </li>
-                            <li>
-                                <img src="https://via.placeholder.com/225x150" alt="En mand og en kvinde der smiler til kameraet (fra matador)">
-                                <p>Mand dig op, kvinde!</p>
-                            </li>
-                            <li>
-                                <p>Peter Madsen anker kun længden af sin straf</p>
-                                <p>Ankesagen mod Peter Madsen kommer kun til  at handle om, hvilken straf han skal have</p>
-                            </li>
-                            <li>
-                                <span class="redAccent">Abonnement</span>
-                                <img src="https://via.placeholder.com/225x150" alt=">En mark med en hest og en hvid kubel">
-                                <p>Rapport fra noske regeringskommision skaber tvivl om lovligheden af FE's masseovervågning</p>
-                            </li>
-                            <li>
-                                <span class="redAccent">Abonnement</span>
-                                <p>Sådan hånteres offentlige arbejdskonflikter i Sverige og Norge</p>
-                                <p>Den ellers højtbeungne danske model skal revideres, hvis det står til Socialdemokratiets formand, Mette Frederiksen. Information skitseres i den aledning overenskomstmodellerne hos vores nodiske søsternationer. Men måske behøver vi slet ikke se ud over landets grænser  for at finde inspiration til justeringer</p>
-                            </li>
-                            <li>
-                                <span class="redAccent">Abonnement</span>
-                                <img src="https://via.placeholder.com/225x150" alt="Barn der går rundt i en faldefædig by">
-                                <p>440.000 syrere er vendt tilbage, selv om krigen forsætter. Vi har fuglt en af dem</p>
-                            </li>
-                        </ul>
-
-                    </article>
-
-                </nav>
-
-            </section>
-        </section>
     </section>
 
     <footer>
         
-        <section>
+        <section class="footer__ENewspaper">
     
             <h1>Information om E-avis</h1>
             
@@ -311,7 +306,7 @@
 
         </section>
        
-        <section>
+        <section class="footer__morning">
 
             <img src="https://via.placeholder.com/200x300" alt="En avis">
 
@@ -334,7 +329,7 @@
 
         </section>
 
-        <section>
+        <section class="footer__about">
 
             <h1>Om Infomation</h1>
 
@@ -350,7 +345,7 @@
 
         </section>
 
-        <section>
+        <section class="footer__address">
 
             <p>Ansvarshavede chefredaktør: Rune Lykkeberg | Dagbladet Infomation, Store Kongensgade 40c, 1264 København. Telefon: 3369 6000 | CVR: 63058416</p>
             <p>Privatlivspolitik | Cookies | Annoncering</p>

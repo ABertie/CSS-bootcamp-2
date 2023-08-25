@@ -1,0 +1,23 @@
+body > footer{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 1rem;
+}
+
+.footer__morning{
+    grid-column: 2/3;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.footer__morning > *{grid-column: 2/3;}
+.footer__morning img{grid-area: 1/1/5/2;}
+
+.footer__about{grid-column: 3/4;}
+
+.footer__address{
+    grid-column: 1/4;
+
+    text-align: center;
+}

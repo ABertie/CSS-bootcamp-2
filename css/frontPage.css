@@ -1,0 +1,13 @@
+.DidYouRead .slider__carosel{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+
+.fontPageNow__header span, .fontPageNow nav article{grid-column: 3/4;}
+
+.fontPageNow nav article ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}

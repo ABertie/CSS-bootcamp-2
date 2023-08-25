@@ -1,4 +1,8 @@
+@import url("/css/header.css");
 @import url("/css/article.css");
+@import url("/css/comments.css");
+@import url("/css/frontPage.css");
+@import url("/css/footer.css");
 
 :root {
     --color-accent: #ed1c24;
@@ -26,10 +30,14 @@ body{
 
     font-family: sans-serif;
     color: var(--color-dark);
-
-    padding: 0 20%;
-
+    
     font-family: var(--font-primary);
+
+    display: grid;
+}
+
+main, body > footer, body > section{
+    margin: 0 20%;
 }
 
 button, a {
@@ -61,4 +69,14 @@ li{
 
 img{
     width: 100%;
+}
+
+.pageGrid{
+    display: grid;
+    grid-template-columns: 2fr 1rem 6fr;
+}
+
+.articelGrid{
+    display: grid;
+    grid-template-columns: 2fr 1rem 3fr 3fr;
 }

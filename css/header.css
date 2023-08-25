@@ -1,0 +1,52 @@
+header{
+    font-family: var(--font-accent);
+    font-weight: 700;
+    font-size: .7em;
+}
+
+.primaryNavigation{
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+    grid-template-rows: auto auto;
+
+    padding: 1em;
+    gap: 2em 1em;
+}
+
+.primaryNavigation__infomationHeader {
+    grid-area: 1/3/2/4;
+
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.primaryNavigation > button, .primaryNavigation > a{
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 800;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 0.5em;
+}
+
+.primaryNavigation .material-symbols-outlined{
+    color: var(--color-dark);
+    transform: scale(1.5);
+}
+
+.primaryNavigation > a{
+    grid-column: 4/5;
+}
+
+header menu{
+    grid-area: 2/1/3/5;
+
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+header .Annonce{padding: 0 20%;}
