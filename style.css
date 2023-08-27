@@ -61,6 +61,7 @@ time, .material-symbols-outlined{
     vertical-align: top;
     line-height: normal;
     font-size: 1.1em;
+    color: inherit;
 }
 
 li{
