@@ -1,6 +1,78 @@
-.comments__recommendations{grid-area: 1/1/5/2;}
-.comments > h1{grid-area: 1/3/2/4;}
-.comments article{grid-column: 3/4;}
-.comments__registration{grid-area: 4/3/5/4;}
+.comments{
+    grid-row: 5/6;
+    
+    margin-bottom: 5rem;
 
-.comments{grid-row: 5/6;}
+    font-size: .9em;
+}
+
+.comments > h1{grid-area: 1/3/2/4;}
+
+.comments .redAccent{
+    padding-bottom: .7em;
+    border-bottom: 1px dotted var(--color-mid);
+
+    font-size: .9em;
+    font-weight: 800;
+}
+
+.comments__registration{
+    grid-area: 4/3/5/4;
+
+    font-family: var(--font-accent);
+    font-weight: 500;
+}
+
+.comments__registration .payWall__greyText{color: var(--color-midLight);}
+
+.comments article{
+    grid-column: 3/4;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    padding: 1.5em 0;
+    border-top: 1px solid var(--color-midLight); 
+}
+
+.comments article:first-of-type{
+    border-top: none;
+}
+
+.comments .comments__profilePicture{
+    grid-area: 1/1/3/2;
+
+    height: 1.25em;
+    width: 1.25em;
+    border-radius: 50%;
+    background-color: var(--color-mid);
+
+    font-size: 2em;
+    color: var(--color-light);
+    text-align: center;
+}
+
+.comments__name, .comments__date{
+    grid-column: 2/3;
+
+    margin-left: 1em;
+
+    font-family: var(--font-accent);
+    font-size: .8em;
+}
+
+.comments article p, .comments article button{
+    grid-column: 1/3;
+
+    margin-top: 1em;
+}
+
+.comments article button{text-align: start;}
+
+.comments__recommendations{grid-area: 1/1/5/2;}
+
+.comments__recommendations button{
+    padding: 1.5em 0;
+    font-weight: 800;
+    font-size: .9em;
+}
